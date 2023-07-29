@@ -1,0 +1,9 @@
+name: city
+type: module
+description: 'Provides city entity'
+package: Custom
+core_version_requirement: ^9 | ^10
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - migrate_tools:migrate_tools

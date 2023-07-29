@@ -1,0 +1,30 @@
+id: city
+label: JSON feed of City
+migration_group: City
+migration_tags:
+  - city
+source:
+  plugin: city_json
+destination:
+  plugin: 'entity:city'
+process:
+  id: _id
+  label: city
+  city: city
+  lat: lat
+  long: long
+  pop: pop
+  state: state
+  created: date
+  changed: date
+  status:
+    plugin: default_value
+    default_value: 1
+  uid:
+    plugin: default_value
+    default_value: 1
+migration_dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - city
